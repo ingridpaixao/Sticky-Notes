@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <!--id must be unique, classes can be duplicated-->
+    <div id = "main" class="container col">
+        <div id = "welcome-prompt" class = "container">
+            <h2>What's on your mind?</h2>
+        </div>
+        <!--section are similar to divs-->
+        <section class = "row flex-center">
+            <div id = "editor" class = "container col inner-container">
+                <textarea name = "note-input" id = "input"></textarea>
+                <div id = "send-note-container">
+                    <button id = "send-note-btn">
+                        <img src="./vecteezy_right-arrow-icon_15337678.png"/>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <hr class = "page-divider"/>
+        <section class = "row flex-center">
+            <div id = "notes-group" class = "inner-container">
+                <div id = "notes-header" class = "row">
+                    <img src="./noun-burger-menu-2828583.png" />
+                    <h5>Notes</h5>
+                </div>
+                <ul id = "notes">
+
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
